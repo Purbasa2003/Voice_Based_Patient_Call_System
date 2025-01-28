@@ -1,5 +1,3 @@
-# voice-based-patient-call-system
-
 ## Download the model from the below link and paste it in the model folder
 https://drive.google.com/file/d/1OmjPWT6CziVi8liODIoDK-Avs3V-FJnn/view?usp=drivesdk
 

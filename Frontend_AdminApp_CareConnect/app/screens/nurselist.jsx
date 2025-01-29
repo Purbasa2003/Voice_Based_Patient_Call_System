@@ -12,7 +12,7 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons'; // For add and search icons
-import { useFocusEffect } from '@react-navigation/native';
+
 
 
 const NurseListScreen = () => {
@@ -81,12 +81,9 @@ const NurseListScreen = () => {
     }
   };
   
-  // Use focus effect to reload the list every time the screen is focused
-  useFocusEffect(
-    React.useCallback(() => {
+   useEffect(() => {
       loadNurses();
-    }, [])
-  );
+    }, []);
 
   return (
     <SafeAreaView style={styles.container}>

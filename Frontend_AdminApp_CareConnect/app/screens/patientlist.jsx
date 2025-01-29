@@ -13,7 +13,7 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { router } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
-import { useFocusEffect } from '@react-navigation/native';
+
 
 const PatientListScreen = () => {
   const [patients, setPatients] = useState([]);
@@ -91,11 +91,11 @@ const PatientListScreen = () => {
   };
 
 
-  useFocusEffect(
-    React.useCallback(() => {
-      loadPatients();
-    }, [])
-  );
+  useEffect(() => {
+    loadPatients();
+  }, []);
+  
+  
 
   return (
     <SafeAreaView style={styles.container}>

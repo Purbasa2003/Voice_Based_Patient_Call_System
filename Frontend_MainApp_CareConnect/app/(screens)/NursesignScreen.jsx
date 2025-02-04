@@ -25,7 +25,7 @@ export default function LoginScreen() {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://192.168.45.108:5000/api/nurses/login', {
+            const response = await axios.post('http://192.168.29.125:5000/api/nurses/login', {
                 id,
                 password
             });

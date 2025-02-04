@@ -32,7 +32,7 @@ export default function LoginScreen() {
             // Make a POST request to the backend API
 
             // Replace the IP address with your own PC's IP address
-            const response = await axios.post('http://192.168.45.108:5000/api/admin', {
+            const response = await axios.post('http://192.168.29.125:5000/api/admin', {
                 uniqueId,
                 password,
             });

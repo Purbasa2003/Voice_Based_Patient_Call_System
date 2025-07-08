@@ -1,32 +1,4 @@
-Voice-Based Patient Call System
-
-The project aims to develop a voice-based patient call system that allows patients to
-communicate their needs to nurses in a natural and convenient manner. Through the use of
-a friendly voice assistant powered by Azure OpenAI, the system will engage in interactive
-dialogues with patients to understand and analyse their requests. The system will make use
-of Autonomous AI Agents, which will take patient concerns and autonomously act upon
-them based on predefined rules and priorities. These agents will work with Speech Services
-(both Speech to Text and Text to Speech), combined with Natural Language Processing
-(NLP), to improve the overall user experience.
-
-The AI will then assign a priority level to each request and send it to nurses via a
-smartphone app, providing a clear overview of requests with the room number and content.
-This system improves patient care by facilitating seamless communication between patients
-and nurses, allowing quicker responses to critical requests.
-
-Here’s a **clean, professional, and GitHub-ready README** for your **CARE-CONNECT: Voice-Based Patient Call System** project. It's been fully structured with:
-
-* 🔥 A **project title & tagline**
-* 📂 Clear **sections** with styled headings
-* ✅ Proper **code blocks** for commands
-* ⚙️ Setup instructions for **Admin App**, **Frontend**, and **AI backend**
-* 🛠 **Docker** & **Virtual environment** alternatives
-* 💡 A neat **Troubleshooting + Notes** section
-
----
-
-
-# 🗣️ CARE-CONNECT — Voice-Based Patient Call System  
+# CARE-CONNECT — Voice-Based Patient Call System  
 > Bridging accessibility gaps in hospitals through real-time, AI-powered voice interfaces
 
 ---
@@ -37,7 +9,7 @@ Here’s a **clean, professional, and GitHub-ready README** for your **CARE-CONN
 
 ---
 
-## 🧭 Quick Navigation
+## Quick Navigation
 
 - [Frontend Setup](#frontend-setup)
 - [Admin App Setup](#admin-app-setup)
@@ -48,13 +20,13 @@ Here’s a **clean, professional, and GitHub-ready README** for your **CARE-CONN
 
 ---
 
-## 🎨 Frontend Setup
+##  Frontend Setup
 
 ### 🔧 Prerequisites
 - Node.js (v14 or higher)
 - npm (Node Package Manager)
 
-### 🚀 Steps to Run Frontend Main App
+###  Steps to Run Frontend Main App
 
 ```bash
 cd SpringBoardApp_Frontend
@@ -74,7 +46,7 @@ App will open in your browser at: [http://localhost:8081](http://localhost:8081)
 * Node.js
 * npm
 
-### 🚀 Steps to Run Admin App
+###  Steps to Run Admin App
 
 ```bash
 cd SpringBoardApp_AdminApp
@@ -86,18 +58,18 @@ Admin dashboard will run at: [http://localhost:8081](http://localhost:8081)
 
 ---
 
-## 🤖 AI-Part
+##  AI-Part
 
-### 🔽 Model Download
+###  Model Download
 
 Download the AI model and place it inside the `model/` directory.
 **[Model Download Link](#)** *(Insert actual link here)*
 
 ---
 
-## 🐳 Docker Setup
+##  Docker Setup
 
-### 🔨 Build the Docker Container
+###  Build the Docker Container
 
 ```bash
 # With sudo
@@ -107,7 +79,7 @@ sudo docker-compose build --no-cache
 docker-compose build --no-cache
 ```
 
-### 🚀 Run the Container
+###  Run the Container
 
 ```bash
 # With sudo
@@ -117,7 +89,7 @@ sudo docker-compose up -d
 docker-compose up -d
 ```
 
-### 📜 View Logs
+###  View Logs
 
 ```bash
 sudo docker-compose logs -f
@@ -125,14 +97,14 @@ sudo docker-compose logs -f
 docker-compose logs -f
 ```
 
-### 🌐 Access the API
+###  Access the API
 
 * Endpoint: [http://0.0.0.0:8000](http://0.0.0.0:8000)
 * Docs: [http://0.0.0.0:8000/docs](http://0.0.0.0:8000/docs)
 
 ---
 
-## 🐍 Python Virtual Environment Setup
+##  Python Virtual Environment Setup
 
 ### 🔧 Create and Activate Virtual Environment
 
@@ -149,13 +121,13 @@ env\Scripts\activate
 .\env\Scripts\Activate.ps1
 ```
 
-### 📦 Install Requirements
+###  Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 🚀 Run the Application
+###  Run the Application
 
 ```bash
 uvicorn app:app --reload
@@ -168,7 +140,7 @@ API is available at:
 
 ---
 
-## 🛠 Troubleshooting & Notes
+##  Troubleshooting & Notes
 
 * Delete `node_modules` and `package-lock.json` if facing dependency issues, then run:
 
